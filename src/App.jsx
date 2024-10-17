@@ -1,8 +1,4 @@
-import {
-  BrowserRouter,
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./app/root";
 import { CategoryPage } from "./components/categoryPage/CategoryPage";
 import { StatisticsPage } from "./components/statisticsPage/StatisticsPage";
@@ -30,11 +26,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return (
-    <BrowserRouter basename="/expenses">
-      <RouterProvider router={router}></RouterProvider>
-    </BrowserRouter>
-  );
+  return <RouterProvider router={router}></RouterProvider>;
 }
 
 export default App;
