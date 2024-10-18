@@ -72,7 +72,7 @@ export const ExpenseTable = ({ nowDate }) => {
       );
 
       if (productDetails) {
-        setSelectedCategory(productDetails.category); // Устанавливаем категорию продукта
+        setSelectedCategory(productDetails.category);
       }
     }
     setIsNavOpen(false);

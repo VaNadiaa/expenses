@@ -3,13 +3,13 @@ import { createSlice, nanoid } from "@reduxjs/toolkit";
 export const NUMBER_OF_SYMBOLS = 20;
 
 const getInitialState = () => {
-  const storedData = localStorage.getItem("persist:root"); // получаем данные из локального хранилища
+  const storedData = localStorage.getItem("persist:root"); 
 
   if (storedData) {
     const parsedData = JSON.parse(storedData);
-    return JSON.parse(parsedData.categories || '[]'); // возвращаем массив категорий или пустой массив
+    return JSON.parse(parsedData.categories || '[]'); 
   }
-  return []; // если данных нет, возвращаем пустой массив
+  return []; 
 };
 
 const initialState = getInitialState();
